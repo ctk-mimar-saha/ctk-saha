@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CTK Saha taşındı · moved</title>
+<meta http-equiv="refresh" content="0; url=https://ctkarchives.com/app/">
+<link rel="canonical" href="https://ctkarchives.com/app/">
+<script>
+// eski kurulumun önbelleğini ve service worker'ını temizle, sonra yeni adrese git
+(async () => {
+  try { if ('serviceWorker' in navigator) for (const r of await navigator.serviceWorker.getRegistrations()) await r.unregister(); } catch (e) {}
+  try { if (window.caches) for (const k of await caches.keys()) await caches.delete(k); } catch (e) {}
+  location.replace('https://ctkarchives.com/app/' + location.search + location.hash);
+})();
+</script>
+<style>body{font:16px system-ui,sans-serif;max-width:520px;margin:15vh auto;padding:0 16px;color:#152019}a{color:#b8322a}</style>
+</head><body>
+<h1>CTK Saha taşındı</h1>
+<p>Uygulamanın yeni adresi: <a href="https://ctkarchives.com/app/">ctkarchives.com/app</a>. Projelerinizi yeni adreste paketi bir kez yeniden açarak yükleyin.</p>
+<p lang="en">CTK Saha has moved to <a href="https://ctkarchives.com/app/">ctkarchives.com/app</a>.</p>
+</body></html>
